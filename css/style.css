@@ -295,6 +295,10 @@ footer #direitos{
         background-image: url(../img/pscapasupremomobile.jpg);
         background-size: 100%;
     }
+    #promo div{
+        width: 110%;
+        margin-left: -5%;
+    }
     #promo div > div{
         width: 32%;
         margin-right: -4px;
