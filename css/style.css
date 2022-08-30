@@ -98,11 +98,16 @@
 }
 
 /*Menu mobile*/
+
+.header1 #menuburguer{
+    cursor: pointer;
+}
 #painel #menumobile{
     background-color: #73256197;
     color: white;
     padding-bottom: 10px;
     display: none;
+    
 }
 #painel #menumobile div{
     background-color: #F44ECE;
@@ -303,6 +308,17 @@ footer #direitos{
         width: 32%;
         margin-right: -4px;
         height: 250px;
+        padding-top: 25px;
+    }
+    #promo #promo2{
+        font-size: 15px;
+        padding-top: 30px;
+    }
+    #promo #promo2 img{
+        margin-top: 30px;
+    }
+    #promo #promo3 img{
+        margin-top: 0px;
     }
     #destaque .produtos{
         width: 80%;
