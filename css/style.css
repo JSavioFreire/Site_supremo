@@ -6,7 +6,7 @@
     --cormaisescura:#730259;
     --corpink:#f106ba;
     --corclara:#F44ECE;
-    ---dourado:#FFD700;
+    --dourado:#FFD700;
 }
 
 *{
@@ -14,6 +14,9 @@
     margin: 0;
     font-family: 'Open Sans';
     box-sizing: border-box;
+}
+.clear{
+    clear: both;
 }
 
     /*Header principal*/
@@ -58,7 +61,7 @@
 
 .menu{
     color: black;
-    width: 250px;
+    width: 300px;
     background-color: #f2f2f2e1;
     height: 300px;
     line-height: 30px;
@@ -78,6 +81,43 @@
 .header2 .categorias > p{
     text-shadow: 1px 1px 3px black;
 }
+.fitness2{
+    left: 65%;
+}
+.fitness2 ul{
+    display: inline-block;
+    vertical-align: top;
+}
+.fitness2 img{
+    width: 120px;
+    display: inline-block;
+
+}
+.night2{
+    left: 80%;
+}
+
+/*Menu mobile*/
+#painel #menumobile{
+    background-color: #73256197;
+    color: white;
+    height: 200px;
+    display: none;
+}
+#painel #menumobile div{
+    background-color: #F44ECE;
+    display: inline-block;
+    width: 30%;
+    height: 70px;
+    line-height: 70px;
+    border: 2px solid black;
+    margin: 5px;
+}
+#painel #menumobile div a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
 
 /*banner*/
 
@@ -87,11 +127,208 @@ main{
     text-align: center;
 }
 main #painel{
-    width: 95%;
-    background-image: url(../img/16616855782ad22536d1f7fa52065b7d34b689f00c.jpg);
-    background-size: 96%;
-    height: 550px;
+    width: 90%;
+    background-image: url(../img/pscapasupremo.jpg);
+    background-size: 90%;
+    background-position-x: 50%;
+    height: 600px;
     margin: auto;
     position: relative;
     background-repeat: no-repeat;
+}
+
+/*Divs promocao*/
+
+#promo{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 1;
+    position: absolute;
+    bottom: -10px;
+}
+#promo div > div{
+    width: 30%;
+    padding-top: 5px;
+    display: inline-block;
+    border: 1px solid black;
+    min-height: 150px;
+    background-color: var(--corclara);
+    margin: 0 1%;
+    color:  white;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 2px black;
+    vertical-align: top;
+
+
+}
+#promo #promo1 img{
+    width: 80px;
+    margin-top: 20px;
+}
+#promo #promo2 img{
+    width: 80px;
+    margin-top: 10px;
+}
+#promo #promo3 img{
+    width: 100px;
+    margin-top: 5px;
+}
+
+/*Destaques*/
+
+#destaque .destaque{
+    background-color: var(--dourado);
+    color: var(--corpink);
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    margin: 50px auto;
+    text-shadow: 1px 1px 1px black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#destaque .produtos{
+    width: 22%;
+    border: 1px solid var(--corpink);
+    outline: 1px solid var(--dourado);
+    height: 450px;
+    display: inline-block;
+    padding-top: 20px;
+    vertical-align: top;
+    margin: 10px;
+    cursor: pointer;
+}
+#destaque .produtos img{
+    width: 80%;
+    border: 1px solid var(--corpink);
+    outline: 1px solid var(--dourado);
+    height: 300px;
+    margin-bottom: 20px;
+    
+}
+#destaque .produtos .valor{
+    font-size: 25px;
+    color: var(--corpink);
+}
+
+
+
+
+
+
+
+        /*FOOTER*/
+
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+footer > div{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 50px;
+}
+footer #insta img{
+    width: 120px;
+    padding: 10px 0;
+}
+footer #insta a{
+    color: white;
+}
+footer #contato > div{
+    display: flex;
+    flex-direction: row;
+    margin:20px 0 10px 100px;
+}
+footer #contato > div img{
+    margin-right: 10px;
+    width: 25px;
+}
+footer #contato > div #local{
+    width: 20px;
+}
+footer #contato > div a{
+    color: white;
+    text-decoration: none;
+}
+footer #direitos{
+    margin-top: 20px;
+}
+
+
+
+
+
+        /*Responsivo*/
+
+@media screen and (max-width:1150px) {
+    .header1{
+        position: relative;
+    }
+    .header1 #menuburguer{
+        position: absolute;
+        background-image: url(../img/menu.png);
+        background-size: 40px;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        top: 30px;
+        right: 40px;
+    }
+    .header1 #titulo{
+        margin-right:150px ;
+        margin-top: 10px;
+    }
+    .header2{
+        height: 20px;
+    }
+    .header2 .categorias{
+        display: none;
+        
+    }
+    main #painel{
+        background-image: url(../img/pscapasupremomobile.jpg);
+        background-size: 100%;
+    }
+    #promo div > div{
+        width: 32%;
+        margin-right: -4px;
+        height: 250px;
+    }
+    #destaque .produtos{
+        width: 80%;
+    }
+    footer{
+        text-align: left;
+        padding: 20px;
+    }
+    footer > div{
+        width: 30%;
+        margin: 0;
+    }
+    footer #insta > div{
+        width: 100%;
+    }
+    footer #insta > div img{
+        width: 80%;
+    }
+    footer #contato {
+        width: 60%;
+    }
+    footer #contato > div{
+        margin-left: 10px;
+    }
+    footer #direitos{
+        text-align:center;
+    }
+
+
+
+
+
 }
