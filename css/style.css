@@ -101,7 +101,7 @@
 #painel #menumobile{
     background-color: #73256197;
     color: white;
-    height: 200px;
+    padding-bottom: 10px;
     display: none;
 }
 #painel #menumobile div{
