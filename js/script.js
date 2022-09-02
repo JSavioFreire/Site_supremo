@@ -5,9 +5,9 @@ $(function(){
     var menufit = $('main #painel .fitness2')
     var night = $('.header2 .night')
     var menunight = $('main #painel .night2')
-    abrirmenupraia();
-    abrirmenufit();
-    abrirmenunight();
+    
+
+    //nao estou chamando a funcao abrir dos menus
 
 
     //menu pc
